@@ -51,7 +51,6 @@ python image_compressor.py
    - Minimum quality threshold
 5. Click "Start Compression" to begin processing
 
-![Compression Progress](screenshots/compression-progress.png) <!-- Add a screenshot showing compression in progress -->
 
 ## Requirements
 
