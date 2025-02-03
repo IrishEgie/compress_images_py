@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageTk
 from io import BytesIO
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -12,7 +12,8 @@ class ImageCompressorApp:
         self.root.title("Image Compressor")
         self.root.geometry("600x400")  # Increased height
         self.root.minsize(600, 400)    # Set minimum window size
-        
+        img = Image.open('app_icon.ico')
+        root.iconphoto(False, ImageTk.PhotoImage(img))
         # Try to set Windows 10 dark title bar if running on Windows
         try:
             from ctypes import windll
